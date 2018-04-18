@@ -4166,6 +4166,12 @@ obuf@^1.0.0, obuf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
+octicons@^7.0.1:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/octicons/-/octicons-7.2.0.tgz#a721635f73c774d7ffda56a83a29dbde03fc4b53"
+  dependencies:
+    object-assign "^4.1.1"
+
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"
@@ -4904,6 +4910,12 @@ react-live@^1.8.0-2:
     prismjs "^1.6.0"
     prop-types "^15.5.8"
     unescape "^0.2.0"
+
+react-octicons-svg@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-octicons-svg/-/react-octicons-svg-2.0.0.tgz#897e3c018a45bbb1e1ea362a467d7505b13ff225"
+  dependencies:
+    octicons "^7.0.1"
 
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"
