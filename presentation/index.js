@@ -64,6 +64,7 @@ export default class Presentation extends React.Component {
           <Text textColor="tertiary" size={1} bold>
             Nisan 2018
           </Text>
+          <Text textColor="secondary" size={1}>http://cesium-sunum.surge.sh</Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary" bgImage={images.myself}>
         </Slide>
