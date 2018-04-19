@@ -25,7 +25,11 @@ require("normalize.css");
 
 const images = {
   cesiumLogo: require('../assets/cesium_color_black.png'),
-  myself: require('../assets/myself.jpg')
+  myself: require('../assets/myself.jpg'),
+  architecture: require('../assets/architecture.jpg'),
+  sandcatsle: require('../assets/sandcatsle.png'),
+  question: require('../assets/question.jpg'),
+  pjcozzi: require('../assets/pjcozzi.jpg')
 };
 
 const helloWorld = require('../assets/helloworld.txt');
@@ -69,20 +73,20 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>3045 Github Yıldızı</ListItem>
             <ListItem>1346 Fork</ListItem>
-            <ListItem>10 Geliştirici + 140 Katkı Sağlayıcı</ListItem>
-            <ListItem>143K Kaynak Kod + 131K Test Kodu</ListItem>
-            <ListItem>%95 Coverage</ListItem>
+            <ListItem>10 Ekip İçi Geliştirici + 140 Katkı Sağlayıcı</ListItem>
+            <ListItem>143K Kod + 131K Test = %95 Coverage</ListItem>
+            <ListItem>6778 Forum Konusu</ListItem>
             <ListItem>Mükemmel Dokümantasyon</ListItem>
           </List>
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Mimari</Heading>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary">TEKNOLOJİ</Heading>
           <List>
+            <ListItem>Vanilla JS (es5)</ListItem>
             <ListItem>WebGL</ListItem>
-            <ListItem></ListItem>
-            <ListItem>10 Geliştirici</ListItem>
-            <ListItem>150 Katkı Sağlayıcı</ListItem>
-            <ListItem>143K Kaynak Kod + 131K Test Kodu</ListItem>
+            <ListItem>requirejs</ListItem>
+            <ListItem>gulp</ListItem>
+            <ListItem>jasmine + karma</ListItem>
             <ListItem>%95 Coverage</ListItem>
             <ListItem>Mükemmel Dokümantasyon</ListItem>
           </List>
@@ -94,7 +98,55 @@ export default class Presentation extends React.Component {
         <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
           <CodePane source={helloWorld} lang="html"/>
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary">ÖZELLİKLER</Heading>
+          <List>
+            <ListItem>2D, 3D ve 2.5D</ListItem>
+            <ListItem>wms, wmts, arcgis, google, mapbox, bing, osm</ListItem>
+            <ListItem>Temel grafikler</ListItem>
+            <ListItem>3D model</ListItem>
+            <ListItem>Yeryüzü kabartma</ListItem>
+            <ListItem>3D Tiles</ListItem>
+            <ListItem>KML, GeoJSON, TopoJSON, CZML</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary">Mimari</Heading>
+          <Image src={images.architecture}/>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={6} textColor="primary">Sandcastle = CesiumFiddle</Heading>
+          <Image src={images.sandcatsle}/>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading textColor="primary" fit>Dersler</Heading>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="primary" textColor="secondary">
+          <Heading textColor="tertiary" fit>Güven ve Fikre Saygı</Heading>
+          <Image src={images.pjcozzi}/>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
+          <Heading textColor="primary" fit>Ekibe Dahil Etme</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading textColor="secondary" fit>Onure Etme</Heading>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="primary" textColor="secondary">
+          <Heading textColor="tertiary" fit>Açık Geliştirme</Heading>
+          <Text>Katkı sağlayıcı olmak güzel :)</Text>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="secondary" textColor="primary">
+          <Heading textColor="primary" fit>Ders Çıkartma ve Aksiyon Alma</Heading>
+          <Text textColor="primary">cesium-concierge</Text>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
+          <Heading textColor="secondary" fit>Başarı Hikayesi</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary" bgImage={images.question}>
+        </Slide>
       </Deck>
     );
   }
 }
+
+
