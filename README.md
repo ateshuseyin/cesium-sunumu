@@ -1,9 +1,9 @@
 # Cesium Sunumu
 
-- Ben Kimim
-- Neden Buradayım
+- Hikayem
 - Kısaca Cesium
-- Forum Member, Contributor, Github fork, github star, past month contributor
+- Forum Member, Contributor, Github fork, github star
 - Test sayısı, coverage, code size, CI
--
+- HelloWorld
+- 
 

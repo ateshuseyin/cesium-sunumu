@@ -69,6 +69,17 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem>3045 Github Yıldızı</ListItem>
             <ListItem>1346 Fork</ListItem>
+            <ListItem>10 Geliştirici + 140 Katkı Sağlayıcı</ListItem>
+            <ListItem>143K Kaynak Kod + 131K Test Kodu</ListItem>
+            <ListItem>%95 Coverage</ListItem>
+            <ListItem>Mükemmel Dokümantasyon</ListItem>
+          </List>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>Mimari</Heading>
+          <List>
+            <ListItem>WebGL</ListItem>
+            <ListItem></ListItem>
             <ListItem>10 Geliştirici</ListItem>
             <ListItem>150 Katkı Sağlayıcı</ListItem>
             <ListItem>143K Kaynak Kod + 131K Test Kodu</ListItem>
